@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Play Game XML file -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/farm">
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_score_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="16dp"
+            android:text="SCORE: 0 score" />
+
+        <TextView
+            android:id="@+id/tv_lose_score_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="16dp"
+            android:text="Lose score: 0 score" />
+
+        <TextView
+            android:id="@+id/tv_start_label"
+            android:layout_width="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:layout_height="wrap_content"
+            android:text="Fire to Start Shooting"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="150dp"/>
+
+        <ImageView
+            android:id="@+id/iv_alien"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="end"
+            android:src="@drawable/alien" />
+
+        <ImageView
+            android:id="@+id/iv_gun"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:src="@drawable/gun"
+            android:layout_gravity="bottom"/>
+
+        <ImageView
+            android:id="@+id/iv_gunshot"
+            android:layout_width="190dp"
+            android:layout_height="190dp"
+            android:src="@drawable/gunshot"
+            android:visibility="invisible"
+            android:layout_gravity="bottom"/>
+
+    </FrameLayout>
+
+</LinearLayout>
